@@ -3,9 +3,17 @@
  */
 
 // alert type constants
-export const alert_success = 'success'
-export const alert_error = 'error'
-export const alert_info = 'info'
+const alert_success = 'success'
+const alert_error = 'error'
+const alert_info = 'info'
 // action constants
-export const pop_alert = 'pop_alert'
-export const push_alert = 'push_alert'
+const pop_alert = 'pop_alert'
+const push_alert = 'push_alert'
+
+export default {
+    alert_success,
+    alert_error,
+    alert_info,
+    pop_alert,
+    push_alert,
+}
