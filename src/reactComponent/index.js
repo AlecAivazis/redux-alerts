@@ -2,7 +2,7 @@
 import React from 'react'
 // local imports
 import Alert from './Alert'
-import removeFirstAlert from 'actions/pop_alert'
+import removeFirstAlert from '../actions/popAlert'
 import Timer from './Timer'
 import UList from './UList'
 
@@ -11,12 +11,12 @@ import UList from './UList'
  * This component manages a list of flash messages which are displayed
  * for a particular amount of time.
  */
-@quickConnect('alerts')
 class AlertContainer extends React.Component {
 
     static propTypes = {
         duration: React.PropTypes.number,
         dispatch: React.PropTypes.func.isRequired,
+        alerts: React.PropTypes.array.isRequired,
     }
 
     static defaultProps = {
@@ -76,7 +76,7 @@ class AlertContainer extends React.Component {
                     && <Timer tick={this.popMessage} interval={duration} />}
                 {
                     alerts.slice(0, 5).map((message, index) =>
-                        <FlashMessage
+                        <Alert
                             key={index}
                             {...message}
                         />

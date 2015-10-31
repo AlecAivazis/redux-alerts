@@ -1,12 +1,11 @@
 // third party imports
 import React from 'react'
 // local imports
-import colors from 'colors'
 import {
     alert_success,
     alert_error,
     alert_info,
-} from './constants'
+} from '../constants'
 
 class Alert extends React.Component {
 
@@ -33,25 +32,25 @@ const baseMessageStyle = {
     padding: 15,
     borderRadius: 5,
     marginBottom: 10,
-    boxShadow: `4px 4px 11px 0px ${colors.AlertContainerShadow}`,
+    boxShadow: '4px 4px 11px 0px #ACA4A2',
 }
 
 const styles = {
     baseMessageStyle,
     [alert_success]: {
         ...baseMessageStyle,
-        backgroundColor: colors.AlertSuccesBackground,
-        color: colors.AlertSuccesFontColor,
+        backgroundColor: '#DDF0D4',
+        color: '#3C5F2D',
     },
     [alert_error]: {
         ...baseMessageStyle,
-        backgroundColor: colors.AlertErrorBackground,
-        color: colors.AlertErrorFontColor,
+        backgroundColor: '#C6554B',
+        color: '#5B2722',
     },
     [alert_info]: {
         ...baseMessageStyle,
-        backgroundColor: colors.AlertAlertBackground,
-        color: colors.AlertAlertFontColor,
+        backgroundColor: '#ACCFE8',
+        color: '#405877',
     },
 }
 

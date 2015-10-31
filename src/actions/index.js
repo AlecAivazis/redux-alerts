@@ -1,9 +1,7 @@
-import pushMessage, {PUSH_MESSAGE} from './pushMessage'
-import popMessage, {POP_MESSAGE} from './popMessage'
+import pushAlert from './pushAlert'
+import popAlert from './popAlert'
 
 export default {
-    pushMessage,
-    PUSH_MESSAGE,
-    popMessage,
-    POP_MESSAGE,
+    pushAlert,
+    popAlert,
 }
