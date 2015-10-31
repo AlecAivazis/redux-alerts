@@ -3,7 +3,7 @@ import AlertContainer from './reactComponent'
 import constants from './constants'
 import reducer from './reducer'
 
-export {
+export default {
     actions,
     AlertContainer,
     constants,

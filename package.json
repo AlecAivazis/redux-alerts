@@ -1,6 +1,6 @@
 {
   "name": "redux-alerts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An alert queue for React applications powered by redux",
   "main": "build/index.js",
   "scripts": {
